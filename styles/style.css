@@ -6,10 +6,110 @@
 
 :root {
   --color-fondo: #201e4b;
-  --color-principal: #96d74c;
+  --color-principal: #d8e63c;
   --color-secundario: #995bd5;
   --color-principal-oscuro: #aeb930;
   --color-blanco: #ece9e7;
+  --color-azul: #273287;
   --fuente-grande: 'Russo One';
   --fuente-chica: 'Poppins';
+}
+
+li {
+    list-style: none;
+    font-family: var(--fuente-grande);
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+li:hover a {
+    color: var(--color-principal-oscuro);
+}
+
+a.active {
+    color: var(--color-principal);
+}
+
+li:hover a.active {
+    color: var(--color-principal);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-azul);
+}
+
+header {
+    background-color: var(--color-fondo);
+    padding: 1rem;
+    width: 100vw;
+}
+
+header div.titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--color-principal);
+}
+
+header div.titulo h1 {
+    font-family: var(--fuente-grande);
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+header div.titulo h2 {
+    font-weight: 400;
+    font-family: var(--fuente-chica);
+    margin-top: .5rem;
+    font-size: 1.2rem;
+}
+
+nav button.menu-toggle {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+nav.active {
+    height: 100dvh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-secundario);
+}
+
+nav button.menu-toggle img {
+    height: 4rem;
+}
+
+nav.active ul {
+    display: block;
+    margin-top: 5rem ; /* cuando la nav está abierta en celular */
+}
+
+nav.inactive ul {
+    display: none;
+}
+
+nav.active img.ilustracion-nav-celular {
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    right: 0;
+}
+
+nav.inactive img.ilustracion-nav-celular {
+    display: none;
 }
