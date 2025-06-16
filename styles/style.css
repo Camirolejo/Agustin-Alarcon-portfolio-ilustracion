@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --color-fondo: #201e4b;
+  --color-principal: #96d74c;
+  --color-secundario: #995bd5;
+  --color-principal-oscuro: #aeb930;
+  --color-blanco: #ece9e7;
+  --fuente-grande: 'Russo One';
+  --fuente-chica: 'Poppins';
+}
